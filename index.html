@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
@@ -10,6 +12,9 @@
   
   <style>
    .tabelle {border: 1px solid #bbb; background: #ddd; }
+.werner {margin-left: 30%; font-size: 25px; margin-top: 5px; margin-bottom: 5px }
+.werner2 {margin-left: 30%; font-size: 25px; margin-top: 5px; margin-bottom: 5px;color: green }
+.werner3 {margin-left: 15%; font-size: 20px; margin-top: 5px; margin-bottom: 5px;color: black }
 </style>
 </head>
 
@@ -24,9 +29,9 @@
     <h1>Mein Musikrechner</h1>
     <div data-role="navbar">
       <ul>
-        <li><a href="#seite1">Home</a></li>
-        <li><a href="#seite2">Seite 2</a></li>
-        <li><a href="#seite3">Seite 3</a></li>
+        <li><a href="#seite1">Dur-eigene Töne</a></li>
+        <li><a href="#seite2">Alle Töne</a></li>
+        <li><a href="#seite3">Reserve 3</a></li>
       </ul>
     </div>
   </div>
@@ -73,51 +78,51 @@
 	<div class=ui-grid-b>
 	
 	<div class=ui-block-a>
-  <h3>Es-Instrument </h3>
-    <p class="tabelle" id="aaa"></p>
+  <h3 class="werner3">Es-Instr. </h3>
+    <p class="werner2" id="aaa"></p>
  </div>
  	<div class=ui-block-b>
-  <h3>Bb-Instrument </h3>
-      <p  class="tabelle" id="bbb"></p>
+  <h3 class="werner3">Bb-Instr. </h3>
+      <p  class="werner2" id="bbb"></p>
  </div>
  	<div class=ui-block-c>
-  <h3>C-Instrument </h3>
-      <p class="tabelle" id="ccc"></p>
+  <h3 class="werner3">C-Instr. </h3>
+      <p class="werner2" id="ccc"></p>
  </div>
   </div>
  
 	<div class=ui-grid-b>
 	<div class=ui-block-a>
-<p id="Ton8" onclick="myTon(this, 'red',1,7)">Ton 1</p>
-<p id="Ton7" onclick="myTon(this, 'red',1,6)">Ton 2</p>
-<p id="Ton6" onclick="myTon(this, 'red',1,5)">Ton 3</p>
-<p id="Ton5" onclick="myTon(this, 'red',1,4)">Ton 4</p>
-<p id="Ton4" onclick="myTon(this, 'red',1,3)">Ton 5</p>
-<p id="Ton3" onclick="myTon(this, 'red',1,2)">Ton 6</p>
-<p id="Ton2" onclick="myTon(this, 'red',1,1)">Ton 7</p>
-<p id="Ton1" onclick="myTon(this, 'red',1,0)">Ton 8</p>
+<p id="Ton8" class=werner onclick="myTon(this, 'red',1,7)">Ton 1</p>
+<p id="Ton7" class=werner onclick="myTon(this, 'red',1,6)">Ton 2</p>
+<p id="Ton6" class=werner onclick="myTon(this, 'red',1,5)">Ton 3</p>
+<p id="Ton5" class=werner onclick="myTon(this, 'red',1,4)">Ton 4</p>
+<p id="Ton4" class=werner onclick="myTon(this, 'red',1,3)">Ton 5</p>
+<p id="Ton3" class=werner onclick="myTon(this, 'red',1,2)">Ton 6</p>
+<p id="Ton2" class=werner onclick="myTon(this, 'red',1,1)">Ton 7</p>
+<p id="Ton1" class=werner onclick="myTon(this, 'red',1,0)">Ton 8</p>
 
 
  </div>
  	<div class=ui-block-b>
-<p id="Ton28" onclick="myTon(this, 'red',2,7)">Ton 1</p>
-<p id="Ton27" onclick="myTon(this, 'red',2,6)">Ton 2</p>
-<p id="Ton26" onclick="myTon(this, 'red',2,5)">Ton 3</p>
-<p id="Ton25" onclick="myTon(this, 'red',2,4)">Ton 4</p>
-<p id="Ton24" onclick="myTon(this, 'red',2,3)">Ton 5</p>
-<p id="Ton23" onclick="myTon(this, 'red',2,2)">Ton 6</p>
-<p id="Ton22" onclick="myTon(this, 'red',2,1)">Ton 7</p>
-<p id="Ton21" onclick="myTon(this, 'red',2,0)">Ton 8</p>
+<p id="Ton28" class=werner onclick="myTon(this, 'red',2,7)">Ton 1</p>
+<p id="Ton27" class=werner onclick="myTon(this, 'red',2,6)">Ton 2</p>
+<p id="Ton26" class=werner onclick="myTon(this, 'red',2,5)">Ton 3</p>
+<p id="Ton25" class=werner onclick="myTon(this, 'red',2,4)">Ton 4</p>
+<p id="Ton24" class=werner onclick="myTon(this, 'red',2,3)">Ton 5</p>
+<p id="Ton23" class=werner onclick="myTon(this, 'red',2,2)">Ton 6</p>
+<p id="Ton22" class=werner onclick="myTon(this, 'red',2,1)">Ton 7</p>
+<p id="Ton21" class=werner onclick="myTon(this, 'red',2,0)">Ton 8</p>
  </div>
  	<div  class=ui-block-c>
-<p id="Ton38" onclick="myTon(this, 'red',3,7)">Ton 1</p>
-<p id="Ton37" onclick="myTon(this, 'red',3,6)">Ton 2</p>
-<p id="Ton36" onclick="myTon(this, 'red',3,5)">Ton 3</p>
-<p id="Ton35" onclick="myTon(this, 'red',3,4)">Ton 4</p>
-<p id="Ton34" onclick="myTon(this, 'red',3,3)">Ton 5</p>
-<p id="Ton33" onclick="myTon(this, 'red',3,2)">Ton 6</p>
-<p id="Ton32" onclick="myTon(this, 'red',3,1)">Ton 7</p>
-<p id="Ton31" onclick="myTon(this, 'red',3,0)">Ton 8</p>
+<p id="Ton38" class=werner onclick="myTon(this, 'red',3,7)">Ton 1</p>
+<p id="Ton37" class=werner onclick="myTon(this, 'red',3,6)">Ton 2</p>
+<p id="Ton36" class=werner onclick="myTon(this, 'red',3,5)">Ton 3</p>
+<p id="Ton35" class=werner onclick="myTon(this, 'red',3,4)">Ton 4</p>
+<p id="Ton34" class=werner onclick="myTon(this, 'red',3,3)">Ton 5</p>
+<p id="Ton33" class=werner onclick="myTon(this, 'red',3,2)">Ton 6</p>
+<p id="Ton32" class=werner onclick="myTon(this, 'red',3,1)">Ton 7</p>
+<p id="Ton31" class=werner onclick="myTon(this, 'red',3,0)">Ton 8</p>
 
  </div>
   </div>
@@ -125,9 +130,8 @@
 
 
   <div data-role="footer">
-    <h1>My Footer</h1>
-		<p id="resultat">aa</p>
-	<button onclick="fDur()">Try it</button>
+    <h1>Mögliche Akkorde C-Instrument</h1>
+		<p id="resultat"></p>
   </div>
 </div> 
 
@@ -206,15 +210,30 @@ var duren = [
 	"g  (#)"
 ];
 
+var durenohne = [
+    "C  ",
+    "F  ",
+    "B  ",
+	"Es  ",
+	"As  ",
+	"Des  ",
+	"Ges/Fis  ",
+	"H  ",
+	"E  ",
+	"A  ",
+	"D  ",
+	"G  "
+];
+
 ausgTon = r%12;
 
 document.getElementById("aaa").innerHTML = duren[(r + 9 )%12];
 document.getElementById("bbb").innerHTML = duren[(r + 10)%12];
 document.getElementById("ccc").innerHTML = duren[r%12];	
 
-var a1 = duren[r%12];
-var a2 = duren[(r+1)%12];
-var a3 = duren[(r+11)%12];
+var a1 = durenohne[r%12];
+var a2 = durenohne[(r+1)%12];
+var a3 = durenohne[(r+11)%12] + "7";
 document.getElementById("resultat").innerHTML = a1+", " + a2+", " + a3;	
 
 if ((ausgTon+9)%12 < 6) {

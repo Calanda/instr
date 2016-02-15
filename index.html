@@ -241,7 +241,7 @@ a3 = durenohne[(r+11)%12] + "7" + "    ";
 
 
 
-document.getElementById("resultat").innerHTML = a1+ a2+ a3;	
+document.getElementById("resultat").innerHTML = a1+ ", " + a2 + ", " + a3;	
 
 if ((ausgTon+9)%12 < 6) {
 	toene = toeneb;
@@ -356,6 +356,8 @@ for (i = 0; i < 7; i++) {
 var b1 = a1;
 var b2 = a2;
 var b3 = a3;
+var b1c = ", ";
+var b2c = ", ";
 var counter = 0;
 
 for (i = 0; i < 7; i++) { 
@@ -365,7 +367,7 @@ for (i = 0; i < 7; i++) {
 counter = 0;
 
 if (counter = 0){
-document.getElementById("resultat").innerHTML = a1+ a2+ a3;	
+document.getElementById("resultat").innerHTML = a1 + ", " + a2 + ", " + a3;	
 }
 
 else {
@@ -377,8 +379,10 @@ if (tTAll[4] == true) {b2 = "";}
 if (tTAll[5] == true) {b3 = ""; b1="";}  
 if (tTAll[6] == true) {b1 = ""; b2="";} 
    
+if (b3 == "")  {b2c = "";}
+if (b2 == "")  {b1c = "";}  
 
-document.getElementById("resultat").innerHTML = b1+ b2+ b3;		
+document.getElementById("resultat").innerHTML = b1 + b1c + b2 + b2c + b3;		
 }
 
 
